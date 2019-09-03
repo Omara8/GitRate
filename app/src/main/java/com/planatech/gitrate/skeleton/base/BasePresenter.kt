@@ -24,10 +24,6 @@ abstract class BasePresenter<T : BaseView>(val baseview : T) {
         disposable?.dispose()
     }
 
-    open fun onDetach(){
-
-    }
-
     fun getView(): T {
         return baseview
     }
